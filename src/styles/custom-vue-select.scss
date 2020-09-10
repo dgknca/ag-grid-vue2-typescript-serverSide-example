@@ -1,0 +1,42 @@
+.v-select {
+    width: 56px;
+    height: var(--pagination-btn-height);
+    box-sizing: border-box;
+    border: 1px solid var(--gray2);
+    border-radius: 4px;
+}
+
+.vs__selected {
+    margin: 0;
+    padding: 0;
+    color: var(--gray3);
+    border: none;
+    height: var(--pagination-btn-height);
+    line-height: 1;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.vs__selected-options {
+    padding: 0 5px;
+}
+
+.vs__dropdown-toggle {
+    border: none;
+    border-radius: 0;
+}
+
+.vs__actions {
+    padding: 0 5px 0 0;
+}
+
+.vs__open-indicator {
+    height: var(--pagination-btn-height);
+    display: flex;
+    align-items: center;
+}
+
+.vs__search,
+.vs__search:focus {
+    padding: 0;
+}

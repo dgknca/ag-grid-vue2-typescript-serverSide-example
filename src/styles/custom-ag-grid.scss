@@ -1,0 +1,218 @@
+.ag-theme-alpine {
+    .header-text-left {
+        .ag-header-cell-label {
+            justify-content: flex-end;
+        }
+    }
+
+    .ag-root-wrapper {
+        border: none;
+        border-radius: 3px;
+        background: var(--white);
+    }
+
+    .ag-header {
+        background: var(--gray1);
+        border-bottom-color: var(--border-color);
+    }
+
+    .ag-header-cell-text {
+        text-transform: uppercase;
+        font-weight: 500;
+        color: var(--gray3);
+    }
+
+    .ag-cell-value {
+        color: var(--gray4);
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .ag-row {
+        height: var(--cell-height);
+        border: none !important;
+        border-bottom: 1px solid var(--border-color) !important;
+        background: var(--white);
+
+        &-odd {
+            background: var(--white);
+        }
+
+        &-hover {
+            background: var(--gray1);
+        }
+    }
+
+    .ag-cell {
+        line-height: var(--cell-height);
+    }
+
+    .ag-pinned-left-header,
+    .ag-cell.ag-cell-last-left-pinned:not(.ag-cell-range-right):not(.ag-cell-range-single-cell) {
+        border-right-color: var(--border-color);
+    }
+
+    .ag-header-group-cell-label,
+    .ag-header-cell-label {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .ag-ltr .ag-header-cell:not(.ag-right-aligned-header) .ag-header-label-icon {
+        margin-left: 0;
+        margin-right: 8px;
+    }
+
+    .grid-cell-centered {
+        text-align: center;
+    }
+
+    .grid-cell-keywords,
+    .grid-cell-searchvolume {
+        cursor: pointer;
+    }
+
+    .grid-cell-searchvolume {
+        span svg {
+            margin-right: 15px;
+            margin-left: 10px;
+        }
+    }
+
+    .grid-cell-rank {
+        text-align: center;
+
+        span svg {
+            margin-left: 8px;
+        }
+    }
+
+    .grid-cell-diff {
+        text-align: center;
+
+        span {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+            font-size: 12px;
+        }
+
+        &.grid-cell-diffRank {
+            span {
+                background: var(--green-alpha-10);
+                color: var(--green);
+            }
+        }
+
+        &.grid-cell-diffPixelRank {
+            span {
+                background: var(--red-alpha-10);
+                color: var(--red);
+            }
+        }
+    }
+
+    .grid-cell-pixelRank {
+        text-align: center;
+    }
+
+    .grid-cell-urlpage {
+        color: var(--purple);
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--purple);
+    }
+
+    .ag-header-icon {
+        padding-top: 2px;
+    }
+
+    .ag-paging-panel {
+        border: none !important;
+    }
+
+    .ag-root-wrapper-body {
+        border: 1px solid var(--border-color);
+    }
+}
+
+
+
+.ag-cell-focus,
+.ag-cell {
+    border: none !important;
+}
+
+// hide default pagination
+.ag-paging-panel {
+    display: none;
+}
+
+// custom pagination
+
+.custom-pagination {
+    width: 100%;
+    height: var(--pagination-btn-height);
+    display: flex;
+    justify-content: flex-end;
+    user-select: none;
+    margin-top: 20px;
+
+    .pg-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .pg-summary-panel {
+        display: flex;
+        align-items: center;
+    }
+
+    .pg-btn {
+        height: var(--pagination-btn-height);
+        width: var(--pagination-btn-height);
+        border: 1px solid var(--gray2);
+        color: var(--gray3);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 3px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .pg-prev,
+    .pg-next {
+        cursor: pointer;
+    }
+
+    .pg-current {
+        width: 40px;
+        border-color: var(--shade2);
+        color: var(--gray4);
+    }
+
+    .pg-row-summary-panel {
+        color: var(--gray4);
+        font-weight: 500;
+        font-size: 14px;
+        padding-left: 10px;
+    }
+
+    .pg-select {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .pg-select-label {
+        font-size: 14px;
+        color: var(--gray4);
+        font-weight: 500;
+        margin-right: 10px;
+    }
+}
