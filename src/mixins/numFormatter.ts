@@ -1,4 +1,4 @@
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from "vue-property-decorator";
 
 @Component
 class NumFormatter extends Vue {
@@ -6,10 +6,10 @@ class NumFormatter extends Vue {
     const num =
       Math.abs(value) > 999
         ? Math.sign(value) * parseFloat((Math.abs(value) / 1000).toFixed(1)) +
-          'k'
-        : Math.sign(value) * Math.abs(value)
+          "k"
+        : Math.sign(value) * Math.abs(value);
 
-    return num.toString()
+    return num.toString();
   }
 }
-export default NumFormatter
+export default NumFormatter;

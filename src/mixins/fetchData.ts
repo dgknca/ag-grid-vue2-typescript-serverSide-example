@@ -1,5 +1,5 @@
-import { Component, Vue } from 'vue-property-decorator'
-import axios from 'axios'
+import { Component, Vue } from "vue-property-decorator";
+import axios from "axios";
 
 @Component
 class FetchData extends Vue {
@@ -7,7 +7,7 @@ class FetchData extends Vue {
     return await axios
       .post(url, req)
       .then(res => res.data)
-      .catch(err => console.log(err))
+      .catch(err => console.log(err));
   }
 }
-export default FetchData
+export default FetchData;

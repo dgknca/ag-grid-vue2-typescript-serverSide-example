@@ -15,7 +15,6 @@
   </svg>
 </template>
 
-
 <style lang="scss" scoped>
 .vol1 {
   svg path:nth-child(2),
