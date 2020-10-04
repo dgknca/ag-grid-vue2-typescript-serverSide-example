@@ -1,4 +1,4 @@
-# vue2ts
+# ag-grid-vue2-typescript-serverSide-example
 
 ## Project setup
 ```
